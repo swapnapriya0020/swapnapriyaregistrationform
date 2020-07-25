@@ -3,9 +3,9 @@
 <head>
     <script>
 function validateForm() {
-  var x = document.forms["myForm"]["email"].value;
-  if (x == "") {
-    alert("email must be filled out");
+  var x = document.forms["myForm"]["phone"].value;
+  if (x == " ") {
+    alert("phone must be filled out");
     return false;
   }
 }
@@ -28,6 +28,7 @@ function validateForm() {
     <input type="password" placeholder="password" name="psw" required>
      <i class="fa fa-lock icon"></i>
  </div>
+ <input type="number" name="phone" placeholder="mobile number">
     <button type="submit">SIGN IN</button>   
     <label class="forget-psw">Forgot your password? <a href="#"></a></label>
     <span>Register!</span>
